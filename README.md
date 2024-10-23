@@ -1,2 +1,2 @@
 ## Ifeanyi Ikpenyi - Portfolio
-### GitHub pages
+### Deploying my portfolio on GitHub pages

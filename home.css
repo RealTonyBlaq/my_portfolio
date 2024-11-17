@@ -13,9 +13,9 @@ body {
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    max-width: 95%;
+    margin: 0px auto;
+    padding: 0px;
 }
 
 .top {
@@ -59,12 +59,38 @@ nav.links a:hover {
 }
 
 .hero-section {
-    text-align: center;
-    padding: 100px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    height: 70vh;
     background-image:url('./img/philip-oroni-VfOGf5RWkeg-unsplash.jpg');
     background-size: cover;
     background-position: center;
     color: white;
+}
+
+.my-picture {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-position: center top;
+    background-image: url('img/Self.JPG');
+    background-size: cover;
+    border: 2px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .about-section {
@@ -131,9 +157,21 @@ div.project-card a#project-link:hover {
     border-radius: 10px;
 }
 
+nav.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+nav.social-links a {
+    text-decoration: none;
+}
+
+nav.social-links a:hover {
+    zoom: 120%;
+}
+
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #333;
     color: white;
 }

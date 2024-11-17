@@ -1,4 +1,4 @@
-const cardScroll = document.querySelector('.card-scroll');
+const cardScroll = document.querySelector('.scroller');
 const cards = document.querySelectorAll('.card');
 
 cardScroll.addEventListener('scroll', () => {

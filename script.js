@@ -1,4 +1,3 @@
-Document.lo
 const cardScroll = document.querySelector('.card-scroll');
 const cards = document.querySelectorAll('.card');
 

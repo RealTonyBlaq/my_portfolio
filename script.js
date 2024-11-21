@@ -1,3 +1,7 @@
+document.addEventListener('DOMContentLoaded', () => {
+    
+});
+
 const cardScroll = document.querySelector('.scroller');
 const cards = document.querySelectorAll('.card');
 

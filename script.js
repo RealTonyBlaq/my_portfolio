@@ -13,5 +13,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  
+  fetch('https://api.github.com/users/RealTonyBlaq/repos', )
 });

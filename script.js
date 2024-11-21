@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         h3.textContent = repoName;
 
         const p = document.createElement('p');
-        p.textContent = description;
+        p.textContent = `${description}  `;
 
         const a = document.createElement('a');
         a.href = repo.html_url;

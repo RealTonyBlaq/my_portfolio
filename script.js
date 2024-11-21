@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
       else return response.json();
     })
     .then(data => {
-      const projects = document.getElementsByClassName('projects');
+      const projects = document.querySelector('.projects');
       for (const repo of data) {
         const repoName = repo.name;
         const description = repo.description;
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const img = document.createElement('img');
         img.src = 'https://avatars.githubusercontent.com/u/132378140?v=4';
-        img.alt = `${repoName} image`;
+        img.alt = `${repoName} image` || 'Deafult image';
 
         const h3 = document.createElement('h3');
         h3.textContent = repoName;
@@ -32,10 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
     })
     .catch(err => alert(err.message));
 
-  const cardScroll = document.querySelector('.scroller');
-  const cards = document.querySelectorAll('.card');
-
   cardScroll.addEventListener('scroll', () => {
+    const cardScroll = document.querySelector('.scroller');
+    const cards = document.querySelectorAll('.card');
     cards.forEach(card => {
       const rect = card.getBoundingClientRect();
       const scrollRect = cardScroll.getBoundingClientRect();

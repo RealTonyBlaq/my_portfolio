@@ -26,6 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const p = document.createElement('p');
         p.textContent = description;
 
+        const a = document.createElement('a');
+        a.href = repo.html_url;
+        p.a
+
         card.appendChild(img);
         card.appendChild(h3);
         card.appendChild(p);

@@ -30,7 +30,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const img = document.createElement('img');
         img.src = 'https://avatars.githubusercontent.com/u/132378140?v=4';
 
-        
+        const h3 = document.createElement('h3');
+        h3.textContent = repoName;
+
+        const p = document.createElement('p');
+        p.textContent = description;
+
+        card.appendChild(img);
       }
     })
 });

@@ -20,6 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
     })
     .then(data => {
       const projects = document.getElementsByClassName('projects');
-      const card
+      for (const repo in data) {
+        repoName = repo.name;
+      }
     })
 });

@@ -5,7 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
       else return response.json();
     })
     .then(data => {
-      data.sort(());
+      data.sort((a, b) => new Date(b.pushed_at) - new Date(a.pushed_at));
+      
       const projects = document.querySelector('.projects');
       for (const repo of data) {
         const repoName = repo.name;

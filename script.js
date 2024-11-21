@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
       else return response.json();
     })
     .then(data => {
-      const cards = document.getElementsByClassName('')
+      const projects = document.getElementsByClassName('projects');
+      const card
     })
 });

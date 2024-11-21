@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
       for (const repo in data) {
         const repoName = repo.name;
         const description = repo.description;
+        const card = document.createAttribute()
       }
     })
 });

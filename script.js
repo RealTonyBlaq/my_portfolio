@@ -23,7 +23,14 @@ document.addEventListener('DOMContentLoaded', () => {
       for (const repo in data) {
         const repoName = repo.name;
         const description = repo.description;
-        const card = document.createAttribute('div');
+
+        const card = document.createElement('div');
+        card.className = 'card';
+
+        const img = document.createElement('img');
+        img.src = 'https://avatars.githubusercontent.com/u/132378140?v=4';
+
+        
       }
     })
 });

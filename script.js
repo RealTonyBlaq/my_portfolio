@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
       d.sort((a, b) => new Date(b.pushed_at) - new Date(a.pushed_at));
 
       const data = d.slice(0, 4);
+
       const projects = document.querySelector('.projects');
       for (const repo of data) {
         const repoName = repo.name;

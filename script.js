@@ -4,9 +4,10 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!response.ok) console.error('Network connection error');
       else return response.json();
     })
-    .then(data => {
-      data.sort((a, b) => new Date(b.pushed_at) - new Date(a.pushed_at));
-      
+    .then(d => {
+      d.sort((a, b) => new Date(b.pushed_at) - new Date(a.pushed_at));
+
+      const data = d.slice(0, 4);
       const projects = document.querySelector('.projects');
       for (const repo of data) {
         const repoName = repo.name;

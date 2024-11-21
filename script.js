@@ -18,5 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!response.ok) alert('Network connection error');
       else return response.json();
     })
-    .then(data => {})
+    .then(data => {
+      const cards = document.getElementById()
+    })
 });

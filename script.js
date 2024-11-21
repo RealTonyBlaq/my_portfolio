@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
       else return response.json();
     })
     .then(data => {
-      data.sort()
+      data.sort(());
       const projects = document.querySelector('.projects');
       for (const repo of data) {
         const repoName = repo.name;

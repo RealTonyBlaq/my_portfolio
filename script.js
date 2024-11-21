@@ -21,7 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(data => {
       const projects = document.getElementsByClassName('projects');
       for (const repo in data) {
-        repoName = repo.name;
+        const repoName = repo.name;
+        const description = repo.description;
       }
     })
 });

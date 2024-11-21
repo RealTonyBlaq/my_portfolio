@@ -44,4 +44,5 @@ document.addEventListener('DOMContentLoaded', () => {
         projects.appendChild(card);
       }
     })
+    .catch()
 });

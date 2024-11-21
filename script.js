@@ -1,21 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
   fetch('https://api.github.com/users/RealTonyBlaq/repos')
     .then(response => {
-      if (!response.ok) alert('Network connection error');
+      if (!response.ok) console.error('Network connection error');
       else return response.json();
     })
     .then(data => {
       const projects = document.querySelector('.projects');
       for (const repo of data) {
         const repoName = repo.name;
-        const description = repo.description;
+        const description = repo.description || 'No description available';
 
         const card = document.createElement('div');
         card.className = 'card';
 
         const img = document.createElement('img');
         img.src = 'https://avatars.githubusercontent.com/u/132378140?v=4';
-        img.alt = `${repoName} image` || 'Deafult image';
+        img.alt = `${repoName} image` || 'Default image';
 
         const h3 = document.createElement('h3');
         h3.textContent = repoName;
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         projects.appendChild(card);
       }
     })
-    .catch(err => alert(err.message));
+    .catch(err => console.error('Fetch error:', err.message));
 
   cardScroll.addEventListener('scroll', () => {
     const cardScroll = document.querySelector('.scroller');

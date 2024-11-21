@@ -15,6 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   fetch('https://api.github.com/users/RealTonyBlaq/repos')
     .then(response => {
-      if (!response.ok) 
+      if (!response.ok) alert('Network connection error');
+      else return response.json();
     })
+    .then(data => {})
 });

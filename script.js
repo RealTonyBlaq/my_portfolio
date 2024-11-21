@@ -19,6 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
       else return response.json();
     })
     .then(data => {
-      const cards = document.getElementById()
+      const cards = document.getElementsByClassName('')
     })
 });

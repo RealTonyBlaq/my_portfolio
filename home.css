@@ -75,7 +75,7 @@ nav.links a:hover {
     height: 300px;
     border-radius: 50%;
     background-position: center top;
-    background-image: url('img/Self.JPG');
+    background-image: url('https://avatars.githubusercontent.com/u/132378140?v=4');
     background-size: cover;
     border: 2px solid white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -209,7 +209,7 @@ nav.social-links a {
 
 nav.social-links a:hover {
     transform: scale(1.10);
-    transition: all;
+    transition: transform 0.3s ease-in-out;
 }
 
 footer {

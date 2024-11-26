@@ -146,9 +146,9 @@ nav.links a:hover {
 }
 
 .scroller {  
-    overflow-x: auto; /* Enable horizontal scrolling */
-    white-space: nowrap; /* Prevent cards from wrapping to the next line */
-    padding: 10px 0; /* Optional padding */
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px 0;
 }
 
 .projects {
@@ -215,5 +215,5 @@ nav.social-links a:hover {
 footer {
     text-align: center;
     padding: 20px;
-    color: white;
+    color: rgb(245, 10, 10);
 }
